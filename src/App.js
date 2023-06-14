@@ -72,6 +72,8 @@ function App() {
         <Aleart mess={message} />
         <div className="container my-3">
           <Routes>
+            <Route path="#" element={<Textform name="Enter Text: " mode={mode} showMessage={showMessage} />} />
+            <Route path="" element={<Textform name="Enter Text: " mode={mode} showMessage={showMessage} />} />
             <Route path="/" element={<Textform name="Enter Text: " mode={mode} showMessage={showMessage} />} />
             <Route path="/about" element={<About myStyle={myStyle} SwitchmyStyle={SwitchmyStyle} />} />
           </Routes>
